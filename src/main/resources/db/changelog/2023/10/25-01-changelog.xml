@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.24.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
-    <changeSet id="1697642511510-1" author="ichigo (generated)">
+    <changeSet id="1698220314660-1" author="ichigo (generated)">
         <createTable tableName="calculations">
             <column name="id" type="VARCHAR(255)">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="pk_calculations"/>
@@ -16,6 +16,7 @@
             <column name="second_num_system" type="VARCHAR(255)"/>
             <column name="operation" type="VARCHAR(255)"/>
             <column name="date_time" type="VARCHAR(255)"/>
+            <column name="result" type="VARCHAR(255)"/>
         </createTable>
     </changeSet>
 

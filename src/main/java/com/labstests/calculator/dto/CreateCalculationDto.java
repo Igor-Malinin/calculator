@@ -2,9 +2,10 @@ package com.labstests.calculator.dto;
 
 import lombok.Data;
 
+import java.util.UUID;
+
 @Data
 public class CreateCalculationDto {
-    private String id;
 
     private String firstNum;
 
@@ -15,6 +16,8 @@ public class CreateCalculationDto {
     private String secondNumSystem;
 
     private String operation;
+
+    private String result;
 
     private String dateTime;
 }

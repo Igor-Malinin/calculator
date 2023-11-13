@@ -12,6 +12,7 @@ import java.util.Collection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Динамическое тестирование")
 public class JUnit5DynamicTests {
 
     Calculator calculator = new Calculator();
@@ -33,7 +34,6 @@ public class JUnit5DynamicTests {
             }
         }
         aList.add(sb);
-
         return aList;
     }
 
@@ -41,20 +41,18 @@ public class JUnit5DynamicTests {
     @DisplayName("Двоичное деление")
     public Collection<DynamicTest> binSum() throws Exception {
         Collection<DynamicTest> dynamicTests = new ArrayList<>();
-
-        ArrayList<String> aList = fileReader("/Users/ichigo/Documents/autoTestLabs/calculator/src/test/resources/bin/binDiv.csv");
-
+        ArrayList<String> aList =
+                fileReader("/Users/ichigo/Documents/autoTestLabs/calculator/src/test/resources/bin/binDiv.csv");
         for (int j = 0; j < aList.size()/3; j++) {
             int finalJ = j;
             dynamicTests.add(
-                    DynamicTest.dynamicTest(Integer.toString(j + 1),
-                            () -> assertEquals(
-                                    aList.get(finalJ * 3 + 2),
-                                    calculator.divide(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 2)
-                            ))
+                DynamicTest.dynamicTest(Integer.toString(j + 1),
+                    () -> assertEquals(
+                        aList.get(finalJ * 3 + 2),
+                        calculator.divide(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 2)
+                    ))
             );
         }
-
         return dynamicTests;
     }
 
@@ -62,20 +60,17 @@ public class JUnit5DynamicTests {
     @DisplayName("Восьмиричная разность")
     public Collection<DynamicTest> octSubs() throws Exception {
         Collection<DynamicTest> dynamicTests = new ArrayList<>();
-
         ArrayList<String> aList = fileReader("/Users/ichigo/Documents/autoTestLabs/calculator/src/test/resources/oct/octSubs.csv");
-
         for (int j = 0; j < aList.size()/3; j++) {
             int finalJ = j;
             dynamicTests.add(
-                    DynamicTest.dynamicTest(Integer.toString(j + 1),
-                            () -> assertEquals(
-                                    aList.get(finalJ * 3 + 2),
-                                    calculator.subtract(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 8)
-                            ))
+                DynamicTest.dynamicTest(Integer.toString(j + 1),
+                    () -> assertEquals(
+                        aList.get(finalJ * 3 + 2),
+                        calculator.subtract(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 8)
+                    ))
             );
         }
-
         return dynamicTests;
     }
 
@@ -83,20 +78,17 @@ public class JUnit5DynamicTests {
     @DisplayName("Десятичное умножение")
     public Collection<DynamicTest> decMult() throws Exception {
         Collection<DynamicTest> dynamicTests = new ArrayList<>();
-
         ArrayList<String> aList = fileReader("/Users/ichigo/Documents/autoTestLabs/calculator/src/test/resources/dec/decMult.csv");
-
         for (int j = 0; j < aList.size()/3; j++) {
             int finalJ = j;
             dynamicTests.add(
-                    DynamicTest.dynamicTest(Integer.toString(j + 1),
-                    () -> assertEquals(
-                            aList.get(finalJ * 3 + 2),
-                            calculator.multiply(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 10)
-                    ))
+                DynamicTest.dynamicTest(Integer.toString(j + 1),
+                () -> assertEquals(
+                    aList.get(finalJ * 3 + 2),
+                    calculator.multiply(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 10)
+                ))
             );
         }
-
         return dynamicTests;
     }
 
@@ -104,22 +96,17 @@ public class JUnit5DynamicTests {
     @DisplayName("Шестнадцатиричная сумма")
     public Collection<DynamicTest> hexSum() throws Exception {
         Collection<DynamicTest> dynamicTests = new ArrayList<>();
-
         ArrayList<String> aList = fileReader("/Users/ichigo/Documents/autoTestLabs/calculator/src/test/resources/hex/hexSum.csv");
-
         for (int j = 0; j < aList.size()/3; j++) {
             int finalJ = j;
             dynamicTests.add(
-                    DynamicTest.dynamicTest(Integer.toString(j + 1),
-                    () -> assertEquals(
-                            aList.get(finalJ * 3 + 2),
-                            calculator.sum(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 16)
-                    ))
+                DynamicTest.dynamicTest(Integer.toString(j + 1),
+                () -> assertEquals(
+                    aList.get(finalJ * 3 + 2),
+                    calculator.sum(aList.get(finalJ * 3), aList.get(finalJ * 3 + 1), 16)
+                ))
             );
         }
-
         return dynamicTests;
     }
-
-
 }

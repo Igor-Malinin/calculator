@@ -8,9 +8,9 @@ spring:
   jpa:
     hibernate:
       dll-auto: none
-    generate-ddl: true
   liquibase:
-    change-log: "classpath:/db/changelog/2023/10/18-01-changelog.xml"
+    change-log: "classpath:/db/changelog/2023/10/25-01-changelog.xml"
+    enabled: true
 
 server:
   port: 8191

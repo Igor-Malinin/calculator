@@ -1,0 +1,182 @@
+[
+  {
+    "firstNum": "24",
+    "firstNumSystem": "10",
+    "secondNum": "45",
+    "secondNumSystem": "10",
+    "operation": "+",
+    "result": "69",
+    "dateTime": "18.10.2023, 15:56:31"
+  },
+  {
+    "firstNum": "101",
+    "firstNumSystem": "2",
+    "secondNum": "11",
+    "secondNumSystem": "2",
+    "operation": "-",
+    "result": "10",
+    "dateTime": "19.10.2023, 18:11:34"
+  },
+  {
+    "firstNum": "15",
+    "firstNumSystem": "8",
+    "secondNum": "56",
+    "secondNumSystem": "8",
+    "operation": "*",
+    "result": "1126",
+    "dateTime": "20.10.2023, 20:33:23"
+  },
+  {
+    "firstNum": "18F",
+    "firstNumSystem": "16",
+    "secondNum": "4C",
+    "secondNumSystem": "16",
+    "operation": "+",
+    "result": "1DB",
+    "dateTime": "20.10.2023, 21:13:19"
+  },
+  {
+    "firstNum": "264",
+    "firstNumSystem": "10",
+    "secondNum": "4",
+    "secondNumSystem": "10",
+    "operation": "/",
+    "result": "66",
+    "dateTime": "21.10.2023, 14:32:11"
+  },
+  {
+    "firstNum": "10111",
+    "firstNumSystem": "2",
+    "secondNum": "101",
+    "secondNumSystem": "2",
+    "operation": "*",
+    "result": "1110011",
+    "dateTime": "21.10.2023, 15:32:56"
+  },
+  {
+    "firstNum": "76",
+    "firstNumSystem": "8",
+    "secondNum": "34",
+    "secondNumSystem": "8",
+    "operation": "-",
+    "result": "42",
+    "dateTime": "21.10.2023, 16:23:51"
+  },
+  {
+    "firstNum": "549",
+    "firstNumSystem": "10",
+    "secondNum": "48",
+    "secondNumSystem": "10",
+    "operation": "*",
+    "result": "26352",
+    "dateTime": "21.10.2023, 18:12:11"
+  },
+  {
+    "firstNum": "56D",
+    "firstNumSystem": "16",
+    "secondNum": "12A",
+    "secondNumSystem": "16",
+    "operation": "*",
+    "result": "650E2",
+    "dateTime": "22.10.2023, 14:22:21"
+  },
+  {
+    "firstNum": "1000011",
+    "firstNumSystem": "2",
+    "secondNum": "1011",
+    "secondNumSystem": "2",
+    "operation": "-",
+    "result": "111000",
+    "dateTime": "22.10.2023, 14:54:31"
+  },
+  {
+    "firstNum": "344",
+    "firstNumSystem": "8",
+    "secondNum": "65",
+    "secondNumSystem": "8",
+    "operation": "+",
+    "result": "431",
+    "dateTime": "22.10.2023, 15:22:45"
+  },
+  {
+    "firstNum": "22222",
+    "firstNumSystem": "10",
+    "secondNum": "444",
+    "secondNumSystem": "10",
+    "operation": "+",
+    "result": "22666",
+    "dateTime": "22.10.2023, 17:02:52"
+  },
+  {
+    "firstNum": "3242FD",
+    "firstNumSystem": "16",
+    "secondNum": "435C",
+    "secondNumSystem": "16",
+    "operation": "/",
+    "result": "BF",
+    "dateTime": "22.10.2023, 17:13:11"
+  },
+  {
+    "firstNum": "111111",
+    "firstNumSystem": "2",
+    "secondNum": "100",
+    "secondNumSystem": "2",
+    "operation": "/",
+    "result": "1111",
+    "dateTime": "23.10.2023, 13:54:23"
+  },
+  {
+    "firstNum": "777",
+    "firstNumSystem": "8",
+    "secondNum": "25",
+    "secondNumSystem": "8",
+    "operation": "+",
+    "result": "1024",
+    "dateTime": "23.10.2023, 14:13:22"
+  },
+  {
+    "firstNum": "2134123",
+    "firstNumSystem": "10",
+    "secondNum": "111",
+    "secondNumSystem": "10",
+    "operation": "/",
+    "result": "19226",
+    "dateTime": "23.10.2023, 15:01:12"
+  },
+  {
+    "firstNum": "FFF",
+    "firstNumSystem": "16",
+    "secondNum": "CC",
+    "secondNumSystem": "16",
+    "operation": "-",
+    "result": "F33",
+    "dateTime": "23.10.2023, 15:11:23"
+  },
+  {
+    "firstNum": "10101",
+    "firstNumSystem": "2",
+    "secondNum": "101",
+    "secondNumSystem": "10",
+    "operation": "*",
+    "result": "1101001",
+    "dateTime": "23.10.2023, 17:17:56"
+  },
+  {
+    "firstNum": "24523",
+    "firstNumSystem": "8",
+    "secondNum": "1324",
+    "secondNumSystem": "8",
+    "operation": "-",
+    "result": "23177",
+    "dateTime": "23.10.2023, 18:14:19"
+  },
+  {
+    "firstNum": "F42C",
+    "firstNumSystem": "16",
+    "secondNum": "234",
+    "secondNumSystem": "16",
+    "operation": "*",
+    "result": "219F0F0",
+    "dateTime": "23.10.2023, 21:13:19"
+  }
+]
