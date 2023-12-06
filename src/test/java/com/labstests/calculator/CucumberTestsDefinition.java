@@ -38,9 +38,6 @@ public class CucumberTestsDefinition {
     @Autowired
     private CalculationRepository calculationRepository;
 
-
-    private CalculationDto calculationDto;
-
     public ObjectMapper mapper = new ObjectMapper();
 
     @DataTableType
