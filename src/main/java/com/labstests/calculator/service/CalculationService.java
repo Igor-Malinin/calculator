@@ -30,19 +30,16 @@ public class CalculationService {
         return CalculationDtoConverter.convertEntityToDto(calculationEntity);
     }
 
-    @Transactional(readOnly = true)
     public CalculationDto getCalculationDtoById(String uuid) {
         CalculationEntity calculationEntity = getCalculationEntityById(uuid);
         return CalculationDtoConverter.convertEntityToDto(calculationEntity);
     }
 
-    @Transactional(readOnly = true)
     public CalculationEntity getCalculationEntityById(String uuid) {
         return calculationRepository.findById(uuid)
                 .orElseThrow(() -> new CalculationNotFoundException("Вычисление с id: " + uuid + " - не существует"));
     }
 
-    @Transactional(readOnly = true)
     public List<CalculationDto> getAllCalculations() {
         List<CalculationEntity> calculationEntity = getAllCalculationsList();
         List<CalculationDto> calculationDtos = new ArrayList<>();
@@ -52,7 +49,6 @@ public class CalculationService {
         return calculationDtos;
     }
 
-    @Transactional(readOnly = true)
     public List<CalculationEntity> getAllCalculationsList() {
         return calculationRepository.findAll();
     }
